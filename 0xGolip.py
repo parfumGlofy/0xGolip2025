@@ -1,5 +1,4 @@
 import os
-import json
 import time
 import sys
 from colorama import Fore, Style, init
@@ -9,15 +8,6 @@ from modules import phishing, ddos, spam, recon
 init(autoreset=True)
 
 # Memuat konfigurasi
-def load_config():
-    try:
-        with open('config.json', 'r') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"{Fore.RED}Error loading config: {e}{Style.RESET_ALL}")
-        sys.exit(1)
-
-config = load_config()
 
 # Menampilkan banner
 def display_banner():
