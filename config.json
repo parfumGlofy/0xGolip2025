@@ -1,5 +1,19 @@
 {
-    "api_key": "masukkan_api_key_anda_di_sini",
-    "setting_1": "nilai_untuk_setting_1",
-    "setting_2": "nilai_untuk_setting_2"
+  "config": {
+    "phishing": {
+      "site": "example.com",
+      "username": "user1",
+      "password": "pass123"
+    },
+    "ddos": {
+      "target": "example.com",
+      "port": "80"
+    },
+    "spam": {
+      "message": "This is a spam message"
+    },
+    "recon": {
+      "ip": "192.168.1.1"
+    }
+  }
 }
